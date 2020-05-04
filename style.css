@@ -21,6 +21,7 @@ article {
 	box-shadow: 0 0 2px 2px lightgrey;
 	padding: 30px;
   margin-bottom: 30px;
+  max-width: 500px;
 }
 
 footer {
@@ -52,7 +53,7 @@ p, ul, ol {
 }
 
 a {
-  font-weigh: 300;
+  font-weight: 300;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -80,15 +81,16 @@ a:hover, a:active {
 }
 
 /* Media Queries: Desktop */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   #primary-wrapper { display:flex; }
   header { position: fixed; }
+  header { width: 40%; }
   #header-padder { width:40%; }
   main { width:60%; }  
 }
 
 /* Media Queries: Mobile */
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 799px) {
   header { width:100%; }
   #header-padder { display:none; }
   main { width:100%; }
