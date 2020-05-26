@@ -89,10 +89,3 @@ a:hover, a:active {
   #header-padder { width:40%; }
   main { width:60%; }  
 }
-
-/* Media Queries: Mobile */
-@media screen and (max-width: 799px) {
-  header { width:100%; }
-  #header-padder { display:none; }
-  main { width:100%; }
-}
