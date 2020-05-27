@@ -21,6 +21,13 @@
   <div id="primary-wrapper">
 
     <header class="text-center secondary">
+      <nav>
+        <ul id="menu">
+           <li><a href="#home">Home</a></li>
+           <li><a href="#about">About</a></li>
+           <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 		  <img src="img/me.jpg" width="200" id="profile-pic" alt="Profile Picture">
 	  	<h1>Camden Miller</h1>
 	  	<h2>Web Developer</h2>
@@ -33,15 +40,15 @@
 
     <div id="header-padder"></div>
 
-    <main class="primary">
+    <main class="primary" id="home">
         <!-- Please note that the following content was copied from the example webpage, not the HTML code. I applied all the tags etc myself -->
-      <article>
+      <section>
         <h2 class="text-center">Meet Camden</h2>
 
 			  <p>Hello there! I'm Camden Miller, a web developer and all around dork from Florida. I love languages, both the people kind and the computer kind, and all things traditionally nerdy.</p>
-      </article>
+      </section>
 
-      <article>
+      <section id="about">
         <h2 class="text-center">About Me</h2>
 
 		    <p>Computers and the internet have been the primary focus of every part of my non-professional life, from spending way too many hours in online chat boards to raiding giant monsters with a party of like-minded adventurers into the wee hours of the morning, and I've finally decided to take that focus into my career as well.</p>
@@ -67,24 +74,42 @@
           <li>Hot Fuzz</li>
           <li>Tropic Thunder</li>
         </ol>
-      </article>
+      </section>
 
-      <article>
+      <section>
         <div class="text-center"><img src="img/pizza.png" width="200" alt="Pizza" id="pizza"></div>
 
         <h2 class="text-center"><a href="https://morrivar.github.io/Pizza/" target="_blank">My Favorite Pizza</a></h2>
 
-        <p>This is just a placeholder with that <a href="https://github.com/Morrivar/Pizza" target="_blank">silly test repo</a> to show what a project article might look like with a link in the title.</p>
+        <p>This is just a placeholder with that <a href="https://github.com/Morrivar/Pizza" target="_blank">silly test repo</a> to show what a project section might look like with a link in the title.</p>
 
-        <p>I would make an article like this for each project I wanted to showcase.</p>
-      </article>
+        <p>I would make an section like this for each project I wanted to showcase.</p>
+      </section>
+      <section id="contact" class="text-center">
+        <h3>I'm available for work. Get in touch!</h3>
+        <form action="https://formspree.io/mjvayaoy" method="POST">
+          <legend class="hidden">Contact Form</legend>
+          <div class="input-field">
+            <label>
+              Your email:
+              <input type="text" name="_replyto" placeholder="example@email.com">
+            </label>
+          </div>
+          <label for="message" class="hidden">Your message:</label>
+          <div class="input-field">
+            <textarea name="message" placeholder="Type your message here."></textarea>
+          </div>
+        
+          <!-- your other form fields go here -->
+        
+          <button type="reset">Clear</button>
+          <button type="submit">Send</button>
+        </form>
+      </section>
     </main>
   </div>
 
-  <footer class="text-center">
-    <h3>I'm available for work, get in touch:</h3>
-		<a href="mailto:camdenquin@gmail.com" class="" target="_blank">camdenquin@gmail.com</a>
-  </footer>
+  <footer class="text-center"></footer>
 </body>
 
 </html>
