@@ -18,20 +18,20 @@ header {
 section {
   text-align: justify;
   background: white;
-	border-radius:5px;
-	box-shadow: 0 0 2px 2px lightgrey;
-	padding: 30px;
+  border-radius:5px;
+  box-shadow: 0 0 2px 2px lightgrey;
+  padding: 30px;
   margin-bottom: 30px;
 }
 
 h1, h2, h3, h4, h5, label {
-	color:#4A4E69;
+  color:#4A4E69;
   font-weight: 300;
-	font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1, section h2 {
-	font-size:24px;
+  font-size:24px;
 }
 
 header h2 {
@@ -39,13 +39,13 @@ header h2 {
 }
 
 h3 {
-	font-size:18px;
+  font-size:18px;
 }
 
 p, ul, ol {
-	color: #4A4E69;
-	font-weight: 300;
-	font-family: 'Open Sans', sans-serif;
+  color: #4A4E69;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
 }
 
 nav ul {
