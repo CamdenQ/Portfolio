@@ -15,27 +15,22 @@ header {
   padding: 50px 0px;
 }
 
-article {
+section {
   text-align: justify;
   background: white;
 	border-radius:5px;
 	box-shadow: 0 0 2px 2px lightgrey;
 	padding: 30px;
   margin-bottom: 30px;
-  max-width: 500px;
 }
 
-footer {
-  width: 100%;
-}
-
-h1, h2, h3, h4, h5{
+h1, h2, h3, h4, h5, label {
 	color:#4A4E69;
   font-weight: 300;
 	font-family: 'Open Sans', sans-serif;
 }
 
-h1, article h2 {
+h1, section h2 {
 	font-size:24px;
 }
 
@@ -53,6 +48,18 @@ p, ul, ol {
 	font-family: 'Open Sans', sans-serif;
 }
 
+nav ul {
+  justify-content: center;
+  display: flex;
+  list-style: none;
+  padding-right: 25px;
+}
+
+nav li {
+  padding-right: 15px;
+}
+
+
 a {
   font-weight: 300;
   font-family: 'Open Sans', sans-serif;
@@ -64,6 +71,11 @@ a:link, a:visited {
 
 a:hover, a:active {
   text-decoration: underline;
+}
+
+nav a {
+  text-decoration: none;
+  color: #4A4E69;
 }
 
 
@@ -81,11 +93,44 @@ a:hover, a:active {
   padding: 5px;
 }
 
+main{
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+textarea{
+  width: 100%;
+  height: 70px;
+  margin-top: 20px;
+}
+
+#contact {
+  background: none;
+  box-shadow: none;
+}
+
+#contact h3 {
+  font-size: 26px;
+}
+
+
 /* Media Queries: Desktop */
 @media screen and (min-width: 800px) {
   #primary-wrapper { display:flex; }
   header { position: fixed; }
   header { width: 40%; }
   #header-padder { width:40%; }
-  main { width:60%; }  
+  main { width:60%;}  
+  section {max-width: 500px;}
 }
+
+/* Media Queries: Mobile
+@media screen and (max-width: 799px) {
+  header { width:100%; }
+  #header-padder { display:none; }
+  main { width:100%; }
+} */
