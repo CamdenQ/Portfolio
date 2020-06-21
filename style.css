@@ -6,9 +6,9 @@ body {
   margin: 50px;
 }
 
-img { 
-  max-width: 100%; 
-  height: auto; 
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 header {
@@ -18,34 +18,42 @@ header {
 section {
   text-align: justify;
   background: white;
-  border-radius:5px;
+  border-radius: 5px;
   box-shadow: 0 0 2px 2px lightgrey;
   padding: 30px;
   margin-bottom: 30px;
 }
 
-h1, h2, h3, h4, h5, label {
-  color:#4A4E69;
+h1,
+h2,
+h3,
+h4,
+h5,
+label {
+  color: #4a4e69;
   font-weight: 300;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-h1, section h2 {
-  font-size:24px;
+h1,
+section h2 {
+  font-size: 24px;
 }
 
 header h2 {
-  font-size:20px;
+  font-size: 20px;
 }
 
 h3 {
-  font-size:18px;
+  font-size: 18px;
 }
 
-p, ul, ol {
-  color: #4A4E69;
+p,
+ul,
+ol {
+  color: #4a4e69;
   font-weight: 300;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 nav ul {
@@ -59,25 +67,25 @@ nav li {
   padding-right: 15px;
 }
 
-
 a {
   font-weight: 300;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
   text-decoration: none;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
   text-decoration: underline;
 }
 
 nav a {
   text-decoration: none;
-  color: #4A4E69;
+  color: #4a4e69;
 }
-
 
 .text-center {
   text-align: center;
@@ -93,7 +101,7 @@ nav a {
   padding: 5px;
 }
 
-main{
+main {
   display: flex;
   flex-direction: column;
 }
@@ -102,7 +110,7 @@ main{
   display: none;
 }
 
-textarea{
+textarea {
   width: 75%;
   height: 70px;
   margin-top: 20px;
@@ -123,20 +131,43 @@ fieldset {
   font-size: 26px;
 }
 
-
 /* Media Queries: Desktop */
 @media screen and (min-width: 800px) {
-  #primary-wrapper { display:flex; }
-  header { position: fixed; }
-  header { width: 40%; }
-  #header-padder { width:40%; }
-  main { width:60%;}  
-  section {max-width: 500px;}
+  #primary-wrapper {
+    display: flex;
+  }
+
+  header {
+    position: fixed;
+  }
+
+  header {
+    width: 40%;
+  }
+
+  #header-padder {
+    width: 40%;
+  }
+
+  main {
+    width: 60%;
+  }
+
+  section {
+    max-width: 500px;
+  }
 }
 
-/* Media Queries: Mobile
-@media screen and (max-width: 799px) {
-  header { width:100%; }
-  #header-padder { display:none; }
-  main { width:100%; }
+/* mediaQueries: Mobile @media screen and (max-width: 799px) {
+  header {
+    width: 100%;
+  }
+
+  #header-padder {
+    display: none;
+  }
+
+  main {
+    width: 100%;
+  }
 } */
