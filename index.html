@@ -28,6 +28,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="#projects">Projects</a></li>
           </ul>
         </nav>
 
@@ -40,7 +41,11 @@
 
         <h1>Camden Miller</h1>
         <h2>Web Developer</h2>
-
+        <h3>
+          <a href="mailto:camdenquin@gmail.com" class=""
+            >camdenquin@gmail.com</a
+          >
+        </h3>
         <div class="text-center">
           <a
             href="https://www.linkedin.com/in/camdenq/"
@@ -75,7 +80,7 @@
           <h2 class="text-center">About Me</h2>
 
           <p>
-            Computers and the internet have been the primary focus of every part
+            Computers and the Internet have been the primary focus of every part
             of my non-professional life, from spending way too many hours in
             online chat boards to raiding giant monsters with a party of
             like-minded adventurers into the wee hours of the morning, and I've
@@ -84,9 +89,10 @@
 
           <p>
             With the current challenges facing the world, I decided to take my
-            newfound free time and make a much needed career change. Now I'm
-            learning the skills needed to build websites and other projects, and
-            I couldn't be more excited!
+            newfound free time and make a much needed career change. Now, as a
+            newly-minted Full-Stack Web Developer, I couldn't be more excited to
+            work with a team of skilled and passionate developers and get this
+            career started right!
           </p>
 
           <h3>
@@ -107,51 +113,231 @@
             future teammates and coworkers with the sheer volume of random,
             useless trivia I have tucked away.
           </p>
-
-          <p>
-            Just for the heck of it, allow me to leave you with a list of the
-            three best movies of all time (that I've seen):
-          </p>
-
-          <ol>
-            <li>The Princess Bride</li>
-            <li>Hot Fuzz</li>
-            <li>Tropic Thunder</li>
-          </ol>
         </section>
 
-        <section>
+        <section id="projects">
           <div class="text-center">
-            <img src="img/pizza.png" width="200" alt="Pizza" id="pizza" />
+            <img
+              src="img/dekker.png"
+              width="400"
+              alt="Dekker App"
+              id="dekker-img"
+            />
           </div>
 
           <h2 class="text-center">
-            <a href="https://camdenq.github.io/Pizza/" target="_blank"
-              >My Favorite Pizza</a
+            <a href="https://dekker.app/" target="_blank"
+              >DEKKER: An MTG Deck Builder</a
             >
           </h2>
 
           <p>
-            This is just a placeholder with that
-            <a href="https://github.com/CamdenQ/Pizza" target="_blank"
-              >silly test repo</a
-            >
-            to show what a project section might look like with a link to the
-            project as the title.
+            DEKKER is a deck building app for the popular trading card game
+            <i>Magic: the Gathering</i>.
           </p>
 
           <p>
-            I would make an section like this for each project I wanted to
-            showcase.
+            With DEKKER, the user can browse and sort the cards available,
+            create decks from those cards, and add cards to or remove cards from
+            existing decks.
+          </p>
+
+          <p>
+            DEKKER is completely solo endeavor. It's still a work in progress,
+            but I'm pretty pleased with this first stage. This version took
+            roughly two weeks to make, mostly due to it being the first
+            full-stack application I had built on my own.
+          </p>
+
+          <p>
+            Planned improvements include incorporating user registration and
+            authentication, hooking in the official MTG API rather than relying
+            on a custom cards database, adding even more filter options, and
+            improving the UI and UX.
+          </p>
+
+          <p>
+            A long-term goal is to eventually add other card games to DEKKER so
+            that it can be a central resource for all of your trading card game
+            deck building needs
+          </p>
+
+          <p>Technologies used (not exhaustive):</p>
+          <ul class="technologies">
+            <div>
+              <li>Javascript</li>
+              <li>HTML 5</li>
+              <li>CSS 3</li>
+              <li>React.js</li>
+            </div>
+            <div>
+              <li>Express.js</li>
+              <li>Node.js</li>
+              <li>Knex.js</li>
+              <li>PostgreSQL</li>
+            </div>
+          </ul>
+
+          <p>
+            Client GitHub:
+            <a
+              href="https://github.com/CamdenQ/dekker-capstone-client"
+              target="_blank"
+              >https://github.com/CamdenQ/dekker-capstone-client
+            </a>
+          </p>
+          <p>
+            API GitHub:
+            <a
+              href="https://github.com/CamdenQ/dekker-capstone-api"
+              target="_blank"
+              >https://github.com/CamdenQ/dekker-capstone-api
+            </a>
+          </p>
+        </section>
+
+        <section id="projects">
+          <div class="text-center">
+            <img
+              src="img/buddyup.png"
+              width="400"
+              alt="BuddyUp App"
+              id="buddyup-img"
+            />
+          </div>
+
+          <h2 class="text-center">
+            <a href="https://buddyup-client.vercel.app/" target="_blank"
+              >BuddyUp: Find local activities and people</a
+            >
+          </h2>
+
+          <p>
+            BuddyUp is an app designed to help users link up with people in
+            their area for specific activities. The app is primarily designed
+            with users in mind who may not know anybody locally but still want
+            to have some company when they go out. With BuddyUp, all the user
+            needs to do is post their activity or find one that's already been
+            posted in their area.
+          </p>
+
+          <p>
+            This is a proof of concept, so many concerns, especially security
+            conserns beyond basic authentication, are left unhandled.
+          </p>
+
+          <p>
+            I worked on a team of three for this project. I was responsible for
+            90% of the API. The authentication middleware and endpoints were
+            plugged in by another team member from a boilerplate we all had
+            access to, and he did the API testing as well. Every other part of
+            the API was built by me alone. I also had a hand in several React
+            components of the client (including the activity signup component
+            and the list of user signups on the account page), though most of
+            the front-end and 100% of the design were another team member's
+            work.
+          </p>
+
+          <p>Technologies used (not exhaustive):</p>
+          <ul class="technologies">
+            <div>
+              <li>Javascript</li>
+              <li>HTML 5</li>
+              <li>CSS 3</li>
+              <li>React.js</li>
+            </div>
+            <div>
+              <li>Express.js</li>
+              <li>Node.js</li>
+              <li>Knex.js</li>
+              <li>PostgreSQL</li>
+            </div>
+          </ul>
+
+          <p>
+            Client GitHub:
+            <a href="https://github.com/CamdenQ/buddyup-client" target="_blank"
+              >https://github.com/CamdenQ/buddyup-client
+            </a>
+          </p>
+          <p>
+            API GitHub:
+            <a
+              href="https://github.com/thinkful-ei-panda/buddyup-api"
+              target="_blank"
+              >https://github.com/thinkful-ei-panda/buddyup-api
+            </a>
+          </p>
+        </section>
+
+        <section id="projects">
+          <div class="text-center">
+            <img
+              src="img/spaced-repitition.png"
+              width="400"
+              alt="Spaced Repetition App"
+              id="spaced-repetition img"
+            />
+          </div>
+
+          <h2 class="text-center">
+            <a href="https://spaced-repetition-sand.vercel.app/" target="_blank"
+              >Spaced Repetition Learning</a
+            >
+          </h2>
+
+          <p>
+            This app was another proof of concept, this time built as part of a
+            two-man team. It was built in about a day with very specific
+            requirements, including that it use a spaced repetition algorithm to
+            assist the user learning words in a foreign language.
+          </p>
+
+          <p>
+            The idea was to simulate working on an existing code-base to
+            implement features. The database was already built, and we had to
+            design and implement the algoritm on the back end as well as build
+            the front end.
+          </p>
+
+          <p>The work was completed in about a day's worth of man hours.</p>
+
+          <p>Technologies used (not exhaustive):</p>
+          <ul class="technologies">
+            <div>
+              <li>Javascript</li>
+              <li>HTML 5</li>
+              <li>CSS 3</li>
+              <li>React.js</li>
+            </div>
+            <div>
+              <li>Express.js</li>
+              <li>Node.js</li>
+              <li>Knex.js</li>
+              <li>PostgreSQL</li>
+            </div>
+          </ul>
+
+          <p>
+            Client GitHub:
+            <a
+              href="https://github.com/karstentaylor/spaced-repetition"
+              target="_blank"
+              >https://github.com/karstentaylor/spaced-repetition
+            </a>
+          </p>
+          <p>
+            API GitHub:
+            <a
+              href="https://github.com/karstentaylor/spaced-repetition-api"
+              target="_blank"
+              >https://github.com/karstentaylor/spaced-repetition-api
+            </a>
           </p>
         </section>
 
         <section id="contact" class="text-center">
           <h3>I'm available for work. Get in touch!</h3>
-
-          <a href="mailto:camdenquin@gmail.com" class=""
-            >camdenquin@gmail.com</a
-          >
 
           <form action="https://formspree.io/mjvayaoy" method="POST">
             <fieldset>
@@ -174,8 +360,6 @@
                   placeholder="Type your message here."
                 ></textarea>
               </div>
-
-              <!-- your other form fields go here -->
 
               <button type="reset">Clear</button>
               <button type="submit">Send</button>
