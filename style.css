@@ -46,6 +46,7 @@ header h2 {
 
 h3 {
   font-size: 18px;
+  text-align: center;
 }
 
 p,
@@ -133,10 +134,24 @@ fieldset {
   font-size: 26px;
 }
 
-.technologies {
+.technologies,
+.flex {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+.flex {
+  text-align: center;
+}
+
+.flex a {
+  padding: 5px;
+  border: 2px solid #909090;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 2px lightgrey;
+  text-decoration: none;
+  text-align: center;
 }
 
 /* Media Queries: Desktop */
@@ -164,22 +179,18 @@ fieldset {
   section {
     max-width: 500px;
   }
+}
 
+@media screen and (min-width: 475px) {
   .technologies {
     flex-direction: row;
+    justify-content: space-evenly;
   }
 }
 
-/* mediaQueries: Mobile @media screen and (max-width: 799px) {
-  header {
-    width: 100%;
+@media screen and (min-width: 375px) {
+  .flex {
+    flex-direction: row;
+    justify-content: space-evenly;
   }
-
-  #header-padder {
-    display: none;
-  }
-
-  main {
-    width: 100%;
-  }
-} */
+}
