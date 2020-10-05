@@ -16,7 +16,7 @@ header {
 }
 
 section {
-  text-align: justify;
+  text-align: left;
   background: white;
   border-radius: 5px;
   box-shadow: 0 0 2px 2px lightgrey;
@@ -125,6 +125,8 @@ fieldset {
   border: none;
   box-shadow: none;
   background: none;
+  padding: 0;
+  margin: 0;
 }
 
 #contact h3 {
@@ -133,7 +135,7 @@ fieldset {
 
 .technologies {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
 }
 
@@ -161,6 +163,10 @@ fieldset {
 
   section {
     max-width: 500px;
+  }
+
+  .technologies {
+    flex-direction: row;
   }
 }
 
